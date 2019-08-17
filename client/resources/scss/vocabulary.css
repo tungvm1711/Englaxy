@@ -1,0 +1,352 @@
+.Vocabularies {
+
+.Vocabulary {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px 0;
+
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+&
+:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+}
+}
+
+.Vocabulary {
+
+&
+-title {
+    margin-top: 15px;
+    padding-top: 5px;
+    color: #e67e22;
+    border-top: 1px solid #0164a7;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+&
+-word {
+    font-size: 8em;
+    font-weight: 300;
+    color: #222;
+    line-height: 1em;
+}
+
+&
+-audio {
+    font-size: 2.5em;
+}
+
+&
+-pronunciation {
+    font-size: 20px;
+    color: #979797;
+}
+
+&
+-pos,
+
+&
+-definition,
+
+&
+-example {
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+&-word {
+    font-size: 6em;
+}
+}
+
+@media screen and (max-width: 992px) {
+&-word {
+    font-size: 5em;
+}
+}
+
+@media screen and (max-width: 640px) {
+&-word {
+    font-size: 4em;
+}
+}
+
+@media screen and (max-width: 480px) {
+&-word {
+    font-size: 2.5em;
+}
+}
+
+}
+
+.VocabularyForm {
+
+.form-group-wrapper {
+    position: relative;
+
+.CancelIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+}
+
+}
+}
+
+a {
+    cursor: pointer;
+
+&
+:hover {
+    text-decoration: none;
+}
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+li {
+    list-style: none;
+}
+
+}
+
+button, .button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.margin-left {
+    margin-left: 15px
+}
+
+.margin-right {
+    margin-right: 15px
+}
+
+/* MODAL */
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+}
+
+.ReactModal__Content {
+    width: 50%;
+    max-height: 100%;
+
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    border-radius: 0 !important;
+
+    transform: translate(-50%, -50%);
+
+@media screen and (max-width: 768px) {
+    width:
+
+90%;
+}
+
+}
+
+.Modal {
+
+&
+-title {
+
+h1 {
+    display: inline-block;
+
+    text-transform: uppercase;
+}
+
+button {
+    float: right;
+}
+
+}
+}
+
+/* FORM */
+
+.form-error {
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+    border-color: #d43f3a;
+}
+
+span {
+    color: #d43f3a;
+}
+
+}
+
+.form-footer {
+    width: 100%;
+
+&
+--right {
+    text-align: right;
+}
+
+}
+
+label {
+    font-size: 90%;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=date],
+textarea,
+select {
+    width: 100%;
+
+    padding: 12px 20px;
+
+    background: none;
+
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=date],
+textarea:focus,
+select:focus {
+    outline: 0;
+    border-color: #4697e4;
+}
+
+.App {
+    background-color: #ecf0f1;
+}
+.Mark {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Message {
+    background-color: #FFFFFF;
+    padding: 20px 15px;
+    margin: 30px 0;
+
+&-error {
+     color: #e74c3c;
+ }
+
+&-success {
+     color: #2ecc71;
+ }
+
+&-info {
+     color: #3498db;
+ }
+
+&-icon {
+     display: inline-block;
+     float: right;
+     cursor: pointer;
+     color: #222222;
+ }
+
+&-text {
+     display: inline-block;
+     font-size: 18px;
+ }
+}
+.SearchVocabularies {
+&-message {
+     padding: 1em;
+     background-color: #FFFFFF;
+     font-size: 25px;
+ }
+}
+.VocabularyList, .MarkedVocabularies, .ManagePhrasesPage {
+    margin: 15px 0;
+    background-color: #FFFFFF;
+}
+
+.VocabularyPage, .AboutPage {
+&-main {
+     padding: 1em 2em;
+     background-color: #FFFFFF;
+ }
+}
+
+.ErrorPage {
+    padding: 1em 2em;
+    background-color: #FFFFFF;
+
+h1 {
+    margin: 0;
+}
+}
+.Audio, .Notificaion {
+    display: inline-block;
+    cursor: pointer;
+}
+.Notification {
+    cursor: pointer;
+}
+
+.Spinner {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+
+&-icon {
+     height: 50px;
+     width: 50px;
+     display: inline-block;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+&-spin {
+     background-image: url('../images/spin.svg');
+ }
+
+&-bars {
+     background-image: url('../images/bars.svg');
+ }
+}
